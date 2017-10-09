@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1CC23F11173EF640BCD4366E /* libPods-XBClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA12489C8313DC57C25B1082 /* libPods-XBClient.a */; };
+		2F1331091F8B1D3800FF6E91 /* XBRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1331081F8B1D3800FF6E91 /* XBRegisterViewController.m */; };
+		2F1331111F8B1E0900FF6E91 /* XBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1331101F8B1E0900FF6E91 /* XBBaseViewController.m */; };
 		2F38DA2E1F6F66150064594D /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F38DA2D1F6F66150064594D /* UIView+Frame.m */; };
 		2F38DA341F6F67470064594D /* UIImage+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F38DA331F6F67470064594D /* UIImage+Addition.m */; };
 		2F38DA421F6F6A120064594D /* XBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F38DA411F6F6A120064594D /* XBLoginViewController.m */; };
@@ -27,6 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F1331071F8B1D3800FF6E91 /* XBRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBRegisterViewController.h; sourceTree = "<group>"; };
+		2F1331081F8B1D3800FF6E91 /* XBRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBRegisterViewController.m; sourceTree = "<group>"; };
+		2F13310F1F8B1E0900FF6E91 /* XBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBBaseViewController.h; sourceTree = "<group>"; };
+		2F1331101F8B1E0900FF6E91 /* XBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBBaseViewController.m; sourceTree = "<group>"; };
 		2F38DA251F6F63800064594D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		2F38DA2C1F6F66150064594D /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		2F38DA2D1F6F66150064594D /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
@@ -94,9 +100,44 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2F1331051F8B1CFC00FF6E91 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				2F1331061F8B1D0900FF6E91 /* Controller */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		2F1331061F8B1D0900FF6E91 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F1331071F8B1D3800FF6E91 /* XBRegisterViewController.h */,
+				2F1331081F8B1D3800FF6E91 /* XBRegisterViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2F13310A1F8B1D6200FF6E91 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2F13310E1F8B1DE800FF6E91 /* Controller */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2F13310E1F8B1DE800FF6E91 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F13310F1F8B1E0900FF6E91 /* XBBaseViewController.h */,
+				2F1331101F8B1E0900FF6E91 /* XBBaseViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		2F38DA261F6F65300064594D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2F1331051F8B1CFC00FF6E91 /* Register */,
 				2F38DA2B1F6F65800064594D /* Login */,
 				2F38DA301F6F668D0064594D /* Common */,
 				2F38DA271F6F65430064594D /* Category */,
@@ -155,6 +196,7 @@
 		2F38DA301F6F668D0064594D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2F13310A1F8B1D6200FF6E91 /* Base */,
 				2F38DA311F6F66AD0064594D /* CommonDefine.h */,
 			);
 			path = Common;
@@ -382,9 +424,11 @@
 				2F38DA5B1F6F6E4C0064594D /* NSString+Urlcode.m in Sources */,
 				2F38DA511F6F6C980064594D /* NSArray+SafeData.m in Sources */,
 				2F38DA2E1F6F66150064594D /* UIView+Frame.m in Sources */,
+				2F1331091F8B1D3800FF6E91 /* XBRegisterViewController.m in Sources */,
 				2FFA8BC71F6B7FF000A2C58F /* ViewController.m in Sources */,
 				2FFA8BC41F6B7FF000A2C58F /* AppDelegate.m in Sources */,
 				2F38DA541F6F6CE50064594D /* NSMutableArray+SafeData.m in Sources */,
+				2F1331111F8B1E0900FF6E91 /* XBBaseViewController.m in Sources */,
 				2F38DA341F6F67470064594D /* UIImage+Addition.m in Sources */,
 				2F38DA4D1F6F6C260064594D /* NSMutableDictionary+SafeData.m in Sources */,
 				2F38DA4A1F6F6BDA0064594D /* NSDictionary+SafeData.m in Sources */,

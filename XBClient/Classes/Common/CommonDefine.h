@@ -10,6 +10,9 @@
 #define CommonDefine_h
 
 
+//common file
+#import "XBBaseViewController.h"
+
 
 //NSLog
 #ifdef DEBUG
@@ -17,6 +20,9 @@
 #else
 #   define DLog(...)
 #endif
+
+
+
 
 
 #endif /* CommonDefine_h */

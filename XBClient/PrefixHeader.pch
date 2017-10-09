@@ -22,4 +22,8 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
 
+#import "CommonDefine.h"
+
+#import "Category.h"
+
 #endif /* PrefixHeader_pch */

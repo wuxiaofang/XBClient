@@ -9,10 +9,25 @@
 #ifndef Category_h
 #define Category_h
 
-#import "UIView+Frame.h"
+
+#import "NSString+Hash.h"
+#import "NSString+Urlcode.h"
+
+#import "NSArray+SafeData.h"
+#import "NSMutableArray+SafeData.h"
+
+#import "NSDictionary+SafeData.h"
+#import "NSMutableDictionary+SafeData.h"
+
+
+#import "UIColor+Addition.h"
+
 #import "UIImage+Addition.h"
 
-#import "CommonDefine.h"
-#import "UIColor+Addition.h"
+
+#import "UIView+Frame.h"
+
+
+
 
 #endif /* Category_h */

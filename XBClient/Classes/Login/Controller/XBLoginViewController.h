@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XBLoginViewController : UIViewController
+@interface XBLoginViewController : XBBaseViewController
 
 @end
