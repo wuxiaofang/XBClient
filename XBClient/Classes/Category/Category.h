@@ -9,6 +9,7 @@
 #ifndef Category_h
 #define Category_h
 
+#import "UIButton+Extent.h"
 
 #import "NSString+Hash.h"
 #import "NSString+Urlcode.h"

@@ -8,14 +8,23 @@
 
 #import "XBScrollView.h"
 
+
+@implementation XBScrollPage
+
+
+@end
+
+
+@interface XBScrollView()
+
+@property (nonatomic, strong) NSArray* pages;
+
+@property (nonatomic, strong, readwrite) UIScrollView* scrollView;
+
+@end
+
 @implementation XBScrollView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
+
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "XBCheckInViewController.h"
+#import "XBLoginAndRegisterHandler.h"
 
 @interface XBCheckInViewController ()
 
@@ -17,6 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor blueColor];
+    
+    [XBLoginAndRegisterHandler presentLoginAndRegisterVCWithRootVC:self.navigationController loginFinishedBlock:^{
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

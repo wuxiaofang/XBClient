@@ -9,5 +9,6 @@
 #ifndef XBLoginAndRegisterDefine_h
 #define XBLoginAndRegisterDefine_h
 
+typedef void(^LoginFinishedBlock)();
 
 #endif /* XBLoginAndRegisterDefine_h */

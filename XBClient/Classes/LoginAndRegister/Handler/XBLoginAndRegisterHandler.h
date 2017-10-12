@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "XBLoginAndRegisterDefine.h"
 
 @interface XBLoginAndRegisterHandler : NSObject
+
++ (void)presentLoginAndRegisterVCWithRootVC:(UINavigationController*)rootVC
+                         loginFinishedBlock:(LoginFinishedBlock)loginFinishedBlock;
 
 @end

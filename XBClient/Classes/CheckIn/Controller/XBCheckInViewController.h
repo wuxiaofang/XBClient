@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XBCheckInViewController : UIViewController
+@interface XBCheckInViewController : XBBaseViewController
 
 @end

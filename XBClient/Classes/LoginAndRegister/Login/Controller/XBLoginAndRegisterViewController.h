@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "XBLoginDefine.h"
+#import "XBLoginAndRegisterDefine.h"
 
 @interface XBLoginAndRegisterViewController : UIViewController
 

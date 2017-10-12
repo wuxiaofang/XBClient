@@ -34,6 +34,8 @@
     [self.loginButton setTitle:@"登录" forState:UIControlStateNormal];
     [self.view addSubview:self.loginButton];
     
+    self.view.backgroundColor = [UIColor blueColor];
+    
 }
 
 - (void)viewWillLayoutSubviews

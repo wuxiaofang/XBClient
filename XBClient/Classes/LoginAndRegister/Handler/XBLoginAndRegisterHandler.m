@@ -7,7 +7,17 @@
 //
 
 #import "XBLoginAndRegisterHandler.h"
+#import "XBLoginAndRegisterViewController.h"
 
 @implementation XBLoginAndRegisterHandler
+
++ (void)presentLoginAndRegisterVCWithRootVC:(UINavigationController*)rootVC
+                         loginFinishedBlock:(LoginFinishedBlock)loginFinishedBlock
+{
+    XBLoginAndRegisterViewController* loginAndRegisterViewController = [[XBLoginAndRegisterViewController alloc] init];
+    loginAndRegisterViewController.loginFinishedBlock = loginFinishedBlock;
+    [rootVC presentViewController:loginAndRegisterViewController animated:YES completion:nil];
+    
+}
 
 @end

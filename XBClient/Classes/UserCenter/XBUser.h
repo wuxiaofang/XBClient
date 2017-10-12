@@ -10,4 +10,10 @@
 
 @interface XBUser : NSObject
 
++ (XBUser*)instance;
+
+- (BOOL)isLogin;
+
+- (void)logout;
+
 @end

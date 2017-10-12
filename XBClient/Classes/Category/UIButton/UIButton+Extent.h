@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface UIButton_Extent : NSObject
+@interface UIButton(Extent)
+
++ (UIButton*)createButtonWithTarget:(id)target
+                           selector:(SEL)selector;
+
++ (UIButton*)createButtonWithTarget:(id)target
+                           selector:(SEL)selector
+                      controlEvents:(UIControlEvents)controlEvents;
 
 @end

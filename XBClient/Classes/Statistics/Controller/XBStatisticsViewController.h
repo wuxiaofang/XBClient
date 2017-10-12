@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XBStatisticsViewController : UIViewController
+@interface XBStatisticsViewController : XBBaseViewController
 
 @end

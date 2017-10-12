@@ -8,6 +8,24 @@
 
 #import "UIButton+Extent.h"
 
-@implementation UIButton_Extent
+@implementation UIButton(Extent)
+
++ (UIButton*)createButtonWithTarget:(id)target
+                           selector:(SEL)selector
+{
+    return [UIButton createButtonWithTarget:target
+                                   selector:selector
+                              controlEvents:UIControlEventTouchUpInside];
+}
+
++ (UIButton*)createButtonWithTarget:(id)target
+                           selector:(SEL)selector
+                      controlEvents:(UIControlEvents)controlEvents
+{
+    UIButton* button = [[UIButton alloc] init];
+    [button addTarget:target action:selector forControlEvents:controlEvents];
+    return button;
+
+}
 
 @end
