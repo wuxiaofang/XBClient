@@ -10,7 +10,7 @@
 
 #import "XBLoginAndRegisterDefine.h"
 
-@interface XBLoginAndRegisterViewController : UIViewController
+@interface XBLoginAndRegisterViewController : XBBaseViewController
 
 @property (nonatomic, copy) LoginFinishedBlock loginFinishedBlock;
 

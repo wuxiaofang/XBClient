@@ -10,4 +10,13 @@
 
 @interface XBBaseViewController : UIViewController
 
+
+
+
+
+- (void)showBackButtonWithImage;
+- (void)showBackButtonWithTitle:(NSString *)title;
+
+- (void)backBarButtonPressed;
+
 @end

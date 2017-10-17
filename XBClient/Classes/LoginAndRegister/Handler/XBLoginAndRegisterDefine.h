@@ -11,4 +11,6 @@
 
 typedef void(^LoginFinishedBlock)();
 
+typedef void(^CountdownCallback)(NSInteger countDown);
+
 #endif /* XBLoginAndRegisterDefine_h */

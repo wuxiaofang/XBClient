@@ -11,6 +11,7 @@
 
 #import "UIButton+Extent.h"
 
+#import "NSString+Common.h"
 #import "NSString+Hash.h"
 #import "NSString+Urlcode.h"
 

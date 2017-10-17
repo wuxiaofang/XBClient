@@ -11,7 +11,24 @@
 
 @interface XBLoginAndRegisterHandler : NSObject
 
+
++ (XBLoginAndRegisterHandler*)instance;
+
 + (void)presentLoginAndRegisterVCWithRootVC:(UINavigationController*)rootVC
                          loginFinishedBlock:(LoginFinishedBlock)loginFinishedBlock;
+
+
+
+//开始短信验证码倒计时
+- (void)startCountdownTimer;
+
+//停止短信验证码倒计时
+- (void)endCountdownTimer;
+
+//倒计时是否结束
+- (BOOL)isCountdownEnd;
+
+//倒计时的回调
+- (void)setCountdownTimerCallback:(CountdownCallback)countdownCallback;
 
 @end

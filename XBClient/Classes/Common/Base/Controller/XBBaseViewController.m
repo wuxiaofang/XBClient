@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = UIColorFromRGB(0xf5f5f5);
+    self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +26,48 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+- (void)showBackButtonWithImage
+{
+    [self showBackButtonWithImage:@"nav_back"];
+    
 }
-*/
+
+- (void)showBackButtonWithImage:(NSString *)imageName
+{
+    UIImage *image = [UIImage imageNamed:imageName];
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
+    [button setImageEdgeInsets:UIEdgeInsetsMake(0, -40, 0, 0)];
+    [button setImage:image forState:UIControlStateNormal];
+    UIBarButtonItem *barItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    [button addTarget:self
+               action:@selector(backBarButtonPressed)
+     forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem = barItem;
+}
+
+- (void)showBackButtonWithTitle:(NSString *)title
+{
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
+    [button setTitle:title forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [button.titleLabel setFont:[UIFont systemFontOfSize:15]];
+    
+    CGFloat width = [title widthWithFont:[UIFont systemFontOfSize:15]
+                     constrainedToHeigth:44 lineBreakMode:button.titleLabel.lineBreakMode textAlignment:button.titleLabel.textAlignment];
+    button.frame = CGRectMake(0, 0, width, 44);
+    
+    UIBarButtonItem *barItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    [button addTarget:self
+               action:@selector(backBarButtonPressed)
+     forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem = barItem;
+}
+
+- (void)backBarButtonPressed
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 @end

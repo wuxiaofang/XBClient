@@ -17,4 +17,23 @@
                            selector:(SEL)selector
                       controlEvents:(UIControlEvents)controlEvents;
 
+
+- (void)setBackGroundColorForNormal:(UIColor*)color;
+
+- (void)setBackGroundColorForHighlighted:(UIColor*)color;
+
+- (void)setBackGroundImageForNormal:(UIImage*)image;
+
+- (void)setBackGroundImageForHighlighted:(UIImage*)image;
+
+
+- (void)setTitleForNormal:(NSString*)title;
+
+- (void)setTitleForHighlighted:(NSString*)title;
+
+- (void)setTitleColorForNormal:(UIColor*)titleColor;
+
+- (void)setTitleColorForHighlighted:(UIColor*)titleColor;
+
+
 @end

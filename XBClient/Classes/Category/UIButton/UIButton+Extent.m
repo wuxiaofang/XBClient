@@ -28,4 +28,52 @@
 
 }
 
+- (void)setBackGroundColorForNormal:(UIColor*)color
+{
+    [self setBackGroundImageForNormal:[UIImage xb_imageWithColor:color]];
+    
+}
+
+- (void)setBackGroundColorForHighlighted:(UIColor*)color
+{
+    [self setBackGroundImageForHighlighted:[UIImage xb_imageWithColor:color]];
+    
+}
+
+- (void)setBackGroundImageForNormal:(UIImage*)image
+{
+    
+    [self setBackgroundImage:image forState:UIControlStateNormal];
+}
+
+- (void)setBackGroundImageForHighlighted:(UIImage*)image
+{
+    [self setBackgroundImage:image forState:UIControlStateHighlighted];
+    
+}
+
+
+- (void)setTitleForNormal:(NSString*)title
+{
+    [self setTitle:title forState:UIControlStateNormal];
+    
+}
+
+- (void)setTitleForHighlighted:(NSString*)title
+{
+    [self setTitle:title forState:UIControlStateHighlighted];
+    
+}
+
+- (void)setTitleColorForNormal:(UIColor*)titleColor
+{
+    [self setTitleColor:titleColor forState:UIControlStateNormal];
+    
+}
+
+- (void)setTitleColorForHighlighted:(UIColor*)titleColor
+{
+    [self setTitleColor:titleColor forState:UIControlStateHighlighted];
+}
+
 @end

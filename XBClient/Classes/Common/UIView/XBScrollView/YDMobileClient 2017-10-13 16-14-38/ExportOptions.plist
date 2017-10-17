@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>method</key>
+	<string>app-store</string>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>com.yongche.iYongche</key>
+		<string>yongcheDis</string>
+		<key>com.yongche.iYongche.YCWidgetExtension</key>
+		<string>yidao_WidgetExtension_dis</string>
+		<key>com.yongche.iYongche.siriextension</key>
+		<string>iYongChe_SiriKitExtension_Dis</string>
+		<key>com.yongche.iYongche.siriuiextension</key>
+		<string>iYongChe_SiriKitUIExtension_Dis</string>
+		<key>com.yongche.iYongche.watchkitapp</key>
+		<string>appWatch_Dis</string>
+		<key>com.yongche.iYongche.watchkitextension</key>
+		<string>appleWatchExtension_Dis</string>
+	</dict>
+	<key>signingCertificate</key>
+	<string>3A2E586FFCA0E719F64C16F292C1555DE1F29EFB</string>
+	<key>signingStyle</key>
+	<string>manual</string>
+	<key>stripSwiftSymbols</key>
+	<true/>
+	<key>teamID</key>
+	<string>4XNXN38KSW</string>
+	<key>uploadSymbols</key>
+	<true/>
+</dict>
+</plist>

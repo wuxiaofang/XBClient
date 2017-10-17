@@ -10,6 +10,9 @@
 		1CC23F11173EF640BCD4366E /* libPods-XBClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA12489C8313DC57C25B1082 /* libPods-XBClient.a */; };
 		2F1331111F8B1E0900FF6E91 /* XBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1331101F8B1E0900FF6E91 /* XBBaseViewController.m */; };
 		2F1331181F8B66E700FF6E91 /* XBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1331171F8B66E700FF6E91 /* XBUser.m */; };
+		2F29E9F51F95A4D800A7BB29 /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F29E9F41F95A4D800A7BB29 /* NSString+Common.m */; };
+		2F29E9F81F95A8CE00A7BB29 /* UIViewController+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F29E9F71F95A8CE00A7BB29 /* UIViewController+Common.m */; };
+		2F29E9FB1F95D09300A7BB29 /* XBSetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F29E9FA1F95D09300A7BB29 /* XBSetPasswordViewController.m */; };
 		2F38DA2E1F6F66150064594D /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F38DA2D1F6F66150064594D /* UIView+Frame.m */; };
 		2F38DA341F6F67470064594D /* UIImage+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F38DA331F6F67470064594D /* UIImage+Addition.m */; };
 		2F38DA461F6F6A5D0064594D /* UIColor+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F38DA451F6F6A5D0064594D /* UIColor+Addition.m */; };
@@ -40,6 +43,12 @@
 		2F1331101F8B1E0900FF6E91 /* XBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBBaseViewController.m; sourceTree = "<group>"; };
 		2F1331161F8B66E700FF6E91 /* XBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBUser.h; sourceTree = "<group>"; };
 		2F1331171F8B66E700FF6E91 /* XBUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBUser.m; sourceTree = "<group>"; };
+		2F29E9F31F95A4D800A7BB29 /* NSString+Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Common.h"; sourceTree = "<group>"; };
+		2F29E9F41F95A4D800A7BB29 /* NSString+Common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Common.m"; sourceTree = "<group>"; };
+		2F29E9F61F95A8CE00A7BB29 /* UIViewController+Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Common.h"; sourceTree = "<group>"; };
+		2F29E9F71F95A8CE00A7BB29 /* UIViewController+Common.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Common.m"; sourceTree = "<group>"; };
+		2F29E9F91F95D09300A7BB29 /* XBSetPasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBSetPasswordViewController.h; sourceTree = "<group>"; };
+		2F29E9FA1F95D09300A7BB29 /* XBSetPasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBSetPasswordViewController.m; sourceTree = "<group>"; };
 		2F38DA251F6F63800064594D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		2F38DA2C1F6F66150064594D /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		2F38DA2D1F6F66150064594D /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
@@ -190,6 +199,8 @@
 		2F38DA291F6F65640064594D /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2F29E9F61F95A8CE00A7BB29 /* UIViewController+Common.h */,
+				2F29E9F71F95A8CE00A7BB29 /* UIViewController+Common.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -251,6 +262,8 @@
 				2F38DA571F6F6DBB0064594D /* NSString+Hash.m */,
 				2F38DA591F6F6E4C0064594D /* NSString+Urlcode.h */,
 				2F38DA5A1F6F6E4C0064594D /* NSString+Urlcode.m */,
+				2F29E9F31F95A4D800A7BB29 /* NSString+Common.h */,
+				2F29E9F41F95A4D800A7BB29 /* NSString+Common.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -338,6 +351,8 @@
 			children = (
 				2F5D34D31F8F0FCE009C116A /* XBRegisterViewController.h */,
 				2F5D34D41F8F0FCE009C116A /* XBRegisterViewController.m */,
+				2F29E9F91F95D09300A7BB29 /* XBSetPasswordViewController.h */,
+				2F29E9FA1F95D09300A7BB29 /* XBSetPasswordViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -562,12 +577,15 @@
 				2F5D34DC1F8F101B009C116A /* XBLoginAndRegisterViewController.m in Sources */,
 				2F5D34DD1F8F101B009C116A /* XBLoginViewController.m in Sources */,
 				2FFA8BC41F6B7FF000A2C58F /* AppDelegate.m in Sources */,
+				2F29E9FB1F95D09300A7BB29 /* XBSetPasswordViewController.m in Sources */,
 				2F38DA541F6F6CE50064594D /* NSMutableArray+SafeData.m in Sources */,
 				2F1331111F8B1E0900FF6E91 /* XBBaseViewController.m in Sources */,
 				2F38DA341F6F67470064594D /* UIImage+Addition.m in Sources */,
+				2F29E9F81F95A8CE00A7BB29 /* UIViewController+Common.m in Sources */,
 				2F5D34BB1F8F0473009C116A /* UIButton+Extent.m in Sources */,
 				2F5D34D51F8F0FCE009C116A /* XBRegisterViewController.m in Sources */,
 				2F5D34C51F8F0799009C116A /* XBStatisticsViewController.m in Sources */,
+				2F29E9F51F95A4D800A7BB29 /* NSString+Common.m in Sources */,
 				2F5D34E11F8F1057009C116A /* XBLoginAndRegisterHandler.m in Sources */,
 				2F38DA4D1F6F6C260064594D /* NSMutableDictionary+SafeData.m in Sources */,
 				2F38DA4A1F6F6BDA0064594D /* NSDictionary+SafeData.m in Sources */,
