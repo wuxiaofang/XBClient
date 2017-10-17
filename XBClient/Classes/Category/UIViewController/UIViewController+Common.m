@@ -10,12 +10,34 @@
 
 @implementation UIViewController(Common)
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (void)popToViewControllerWithClassName:(NSString*)className
+{
+    UINavigationController* nav = nil;
+    if([self isKindOfClass:[UINavigationController class]]){
+        
+        nav = (UINavigationController*)self;
+    }else{
+        
+        nav = self.navigationController;
+    }
+    UIViewController* popVC = nil;
+    if(nav && className.length > 0){
+        for(UIViewController* vc in nav.viewControllers){
+            
+            if([NSStringFromClass([vc class]) isEqualToString:className]){
+                popVC = vc;
+                
+            }
+        }
+        
+        
+    }
+    
+    if(popVC){
+        
+        [nav popToViewController:popVC animated:YES];
+    }
+    
 }
-*/
 
 @end

@@ -8,6 +8,7 @@
 
 #import "XBRegisterViewController.h"
 #import "XBSetPasswordViewController.h"
+#import "XBLoginAndRegisterHandler.h"
 
 @interface XBRegisterViewController ()
 
@@ -31,8 +32,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self showBackButtonWithImage];
-    self.title = @"注册";
+    if(self.callerType == CallerByRegister){
+        self.title = @"注册";
+        
+    }else if(self.callerType == CallerByFrogetPassword){
+       self.title = @"修改密码";
+        
+    }
     
+    [[XBLoginAndRegisterHandler instance] endCountdownTimer];
     self.contentView = [[UIView alloc] init];
     self.contentView.backgroundColor = UIColorFromRGB(0xffffff);
     [self.view addSubview:self.contentView];
@@ -80,6 +88,10 @@
         self.msgCodeButton.font = [UIFont systemFontOfSize:15];
         self.msgCodeButton.layer.cornerRadius = 5;
         self.msgCodeButton.layer.masksToBounds = YES;
+        
+        [self.msgCodeButton addTarget:self
+                               action:@selector(msgCodeButtonPress)
+                     forControlEvents:UIControlEventTouchUpInside];
         [rightView addSubview:self.msgCodeButton];
         
         [self.contentView addSubview:self.msgCodeTextField];
@@ -101,6 +113,23 @@
 {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
+    [[XBLoginAndRegisterHandler instance] setCountdownTimerCallback:^(NSInteger countDown) {
+        if (countDown > 0) {
+            self.msgCodeButton.enabled = NO;
+            [self.msgCodeButton setTitleForNormal:[NSString stringWithFormat:@"重获验证码(%lds)",(long)countDown]];
+            
+        } else {
+            self.msgCodeButton.enabled = YES;
+            [self.msgCodeButton setTitleForNormal:@"获取验证码"];
+
+        }
+    }];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+
+    [[XBLoginAndRegisterHandler instance] setCountdownTimerCallback:NULL];
 }
 
 
@@ -120,11 +149,18 @@
 
 
 
+
+
 - (void)nextButtonPress
 {
     XBSetPasswordViewController* passwordVC = [[XBSetPasswordViewController alloc] init];
     [self.navigationController pushViewController:passwordVC animated:YES];
     
+}
+
+- (void)msgCodeButtonPress
+{
+    [[XBLoginAndRegisterHandler instance] startCountdownTimer];
 }
 
 @end

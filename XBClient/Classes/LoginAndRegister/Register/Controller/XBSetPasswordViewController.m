@@ -7,6 +7,7 @@
 //
 
 #import "XBSetPasswordViewController.h"
+#import "XBSetSchoolViewController.h"
 
 @interface XBSetPasswordViewController ()
 
@@ -96,7 +97,16 @@
 
 - (void)submitButtonPress
 {
-    
+    if(self.callerType == CallerByRegister){
+        
+        XBSetSchoolViewController* vc = [[XBSetSchoolViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+        
+    }else if(self.callerType == CallerByFrogetPassword){
+        //修改密码
+        //返回到登录
+        [self popToViewControllerWithClassName:@"XBLoginViewController"];
+    }
     
 }
 

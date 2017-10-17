@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#import "XBLoginAndRegisterDefine.h"
+
 @interface XBRegisterViewController : XBBaseViewController
+
+@property (nonatomic, assign) XBCallerType callerType;
 
 @end

@@ -84,6 +84,7 @@
 - (void)registerButtonPress
 {
     XBRegisterViewController* registerVC = [[XBRegisterViewController alloc] init];
+    registerVC.callerType = CallerByRegister;
     [self.navigationController pushViewController:registerVC animated:YES];
 }
 

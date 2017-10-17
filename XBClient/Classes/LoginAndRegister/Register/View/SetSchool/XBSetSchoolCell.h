@@ -1,5 +1,5 @@
 //
-//  UIViewController+Common.h
+//  XBSetSchoolCell.h
 //  XBClient
 //
 //  Created by yongche_w on 2017/10/17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIViewController(Common)
-
-- (void)popToViewControllerWithClassName:(NSString*)className;
+@interface XBSetSchoolCell : UITableViewCell
 
 @end

@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "XBLoginAndRegisterDefine.h"
 @interface XBSetPasswordViewController : XBBaseViewController
+
+@property (nonatomic, assign) XBCallerType callerType;
 
 @end
