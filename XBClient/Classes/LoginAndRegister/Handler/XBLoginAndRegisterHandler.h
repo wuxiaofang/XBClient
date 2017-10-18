@@ -31,4 +31,6 @@
 //倒计时的回调
 - (void)setCountdownTimerCallback:(CountdownCallback)countdownCallback;
 
+- (void)loginFinishCallback;
+
 @end

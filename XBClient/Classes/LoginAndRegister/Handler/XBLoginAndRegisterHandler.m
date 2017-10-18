@@ -17,6 +17,8 @@
 
 @property (nonatomic, copy) CountdownCallback countdownCallback;
 
+@property (nonatomic, copy) LoginFinishedBlock loginFinishedBlock;
+
 @end
 
 
@@ -41,8 +43,7 @@
     
     
     XBLoginAndRegisterViewController* loginAndRegisterViewController = [[XBLoginAndRegisterViewController alloc] init];
-    loginAndRegisterViewController.loginFinishedBlock = loginFinishedBlock;
-    
+    [XBLoginAndRegisterHandler instance].loginFinishedBlock = loginFinishedBlock;
     UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:loginAndRegisterViewController];
     
     [rootVC presentViewController:nav animated:YES completion:nil];
@@ -112,4 +113,13 @@
     return NO;
 }
 
+
+- (void)loginFinishCallback
+{
+    if(self.loginFinishedBlock){
+        self.loginFinishedBlock();
+        self.loginFinishedBlock = nil;
+    }
+    
+}
 @end

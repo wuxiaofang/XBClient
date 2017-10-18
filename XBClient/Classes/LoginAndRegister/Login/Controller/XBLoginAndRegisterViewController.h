@@ -12,6 +12,6 @@
 
 @interface XBLoginAndRegisterViewController : XBBaseViewController
 
-@property (nonatomic, copy) LoginFinishedBlock loginFinishedBlock;
+
 
 @end
