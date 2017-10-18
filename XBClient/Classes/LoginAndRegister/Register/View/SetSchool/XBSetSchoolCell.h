@@ -10,4 +10,6 @@
 
 @interface XBSetSchoolCell : UITableViewCell
 
+- (void)reloadData;
+
 @end

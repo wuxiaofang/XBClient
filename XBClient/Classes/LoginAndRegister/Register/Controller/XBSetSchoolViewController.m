@@ -10,6 +10,8 @@
 #import "XBSetSchoolCreateCell.h"
 #import "XBSetSchoolCell.h"
 
+#import "XBCreateSchoolViewController.h"
+
 @interface XBSetSchoolViewController () <UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView* tableview;
@@ -37,7 +39,9 @@
     [self.tableview registerClass:[XBSetSchoolCreateCell class] forCellReuseIdentifier:@"XBSetSchoolCreateCell"];
     [self.tableview registerClass:[XBSetSchoolCell class] forCellReuseIdentifier:@"XBSetSchoolCell"];
     [self.view addSubview:self.tableview];
-    self.tableview.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tableview.yd_width, 20)];
+ 
+    
+    self.tableview.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tableview.yd_width, 20)];;
     
     
 }
@@ -87,6 +91,16 @@
     
     UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:identify];
     
+    if([identify isEqualToString:@"XBSetSchoolCell"]){
+        XBSetSchoolCell* setSchoolCell = (XBSetSchoolCell*)cell;
+        [setSchoolCell reloadData];
+        
+    }else if([identify isEqualToString:@"XBSetSchoolCreateCell"]){
+        XBSetSchoolCreateCell* createSchoolCell = (XBSetSchoolCreateCell*)cell;
+        [createSchoolCell reloadData];
+        
+    }
+    
     return cell;
 }
 
@@ -101,7 +115,29 @@
 - (nullable UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
     UIView* view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tableview.yd_width, 20)];
+    
+    UIView* line = [[UIView alloc] initWithFrame:CGRectMake(0, 0, view.yd_width, 0.5)];
+    line.backgroundColor = UIColorFromRGB(0xe5e5e5);
+    [view addSubview:line];
+    
     return view;
     
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if(self.schoolArray.count > 0 && indexPath.section == 0){
+        
+        
+    }else{
+        
+        XBCreateSchoolViewController* createVC = [[XBCreateSchoolViewController alloc] init];
+        [self.navigationController pushViewController:createVC animated:YES];
+    }
+    
+}
+
+
 @end

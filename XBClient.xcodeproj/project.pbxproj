@@ -16,6 +16,7 @@
 		2F29E9FE1F95EE7F00A7BB29 /* XBSetSchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F29E9FD1F95EE7F00A7BB29 /* XBSetSchoolViewController.m */; };
 		2F29EA031F95F3D700A7BB29 /* XBSetSchoolCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F29EA021F95F3D700A7BB29 /* XBSetSchoolCell.m */; };
 		2F29EA061F95F3FC00A7BB29 /* XBSetSchoolCreateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F29EA051F95F3FC00A7BB29 /* XBSetSchoolCreateCell.m */; };
+		2F29EA091F96FF2800A7BB29 /* XBCreateSchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F29EA081F96FF2800A7BB29 /* XBCreateSchoolViewController.m */; };
 		2F38DA2E1F6F66150064594D /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F38DA2D1F6F66150064594D /* UIView+Frame.m */; };
 		2F38DA341F6F67470064594D /* UIImage+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F38DA331F6F67470064594D /* UIImage+Addition.m */; };
 		2F38DA461F6F6A5D0064594D /* UIColor+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F38DA451F6F6A5D0064594D /* UIColor+Addition.m */; };
@@ -58,6 +59,8 @@
 		2F29EA021F95F3D700A7BB29 /* XBSetSchoolCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBSetSchoolCell.m; sourceTree = "<group>"; };
 		2F29EA041F95F3FC00A7BB29 /* XBSetSchoolCreateCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBSetSchoolCreateCell.h; sourceTree = "<group>"; };
 		2F29EA051F95F3FC00A7BB29 /* XBSetSchoolCreateCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBSetSchoolCreateCell.m; sourceTree = "<group>"; };
+		2F29EA071F96FF2800A7BB29 /* XBCreateSchoolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBCreateSchoolViewController.h; sourceTree = "<group>"; };
+		2F29EA081F96FF2800A7BB29 /* XBCreateSchoolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBCreateSchoolViewController.m; sourceTree = "<group>"; };
 		2F38DA251F6F63800064594D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		2F38DA2C1F6F66150064594D /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		2F38DA2D1F6F66150064594D /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
@@ -384,6 +387,8 @@
 				2F29E9FA1F95D09300A7BB29 /* XBSetPasswordViewController.m */,
 				2F29E9FC1F95EE7F00A7BB29 /* XBSetSchoolViewController.h */,
 				2F29E9FD1F95EE7F00A7BB29 /* XBSetSchoolViewController.m */,
+				2F29EA071F96FF2800A7BB29 /* XBCreateSchoolViewController.h */,
+				2F29EA081F96FF2800A7BB29 /* XBCreateSchoolViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -614,6 +619,7 @@
 				2F38DA541F6F6CE50064594D /* NSMutableArray+SafeData.m in Sources */,
 				2F1331111F8B1E0900FF6E91 /* XBBaseViewController.m in Sources */,
 				2F38DA341F6F67470064594D /* UIImage+Addition.m in Sources */,
+				2F29EA091F96FF2800A7BB29 /* XBCreateSchoolViewController.m in Sources */,
 				2F29E9F81F95A8CE00A7BB29 /* UIViewController+Common.m in Sources */,
 				2F5D34BB1F8F0473009C116A /* UIButton+Extent.m in Sources */,
 				2F5D34D51F8F0FCE009C116A /* XBRegisterViewController.m in Sources */,
