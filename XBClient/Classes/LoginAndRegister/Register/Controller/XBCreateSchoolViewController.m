@@ -34,7 +34,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self showBackButtonWithImage];
-    self.title = @"添加学校信息";
+    
+    [self setCustomLabelForNavTitle:@"添加学校信息"];
     
     self.schoolLogoButton = [UIButton createButtonWithTarget:self selector:@selector(schoolLogoButtonPress)];
     self.schoolLogoButton.frame = CGRectMake(0, 0, 80, 80);

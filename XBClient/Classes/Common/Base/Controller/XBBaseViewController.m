@@ -70,4 +70,17 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (void)setCustomLabelForNavTitle:(NSString*)title
+{
+    UILabel* label = [[UILabel alloc] init];
+    label.backgroundColor = [UIColor clearColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.font = [UIFont systemFontOfSize:19];
+    label.textColor = UIColorFromRGB(0xffffff);
+    label.text = title;
+    [label sizeToFit];
+    label.frame = CGRectIntegral(label.frame);
+    self.navigationItem.titleView = label;
+}
+
 @end

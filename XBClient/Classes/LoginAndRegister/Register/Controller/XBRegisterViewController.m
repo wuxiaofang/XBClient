@@ -33,10 +33,12 @@
     // Do any additional setup after loading the view.
     [self showBackButtonWithImage];
     if(self.callerType == CallerByRegister){
-        self.title = @"注册";
+        
+        [self setCustomLabelForNavTitle:@"注册"];
         
     }else if(self.callerType == CallerByFrogetPassword){
-       self.title = @"修改密码";
+       
+        [self setCustomLabelForNavTitle:@"修改密码"];
         
     }
     

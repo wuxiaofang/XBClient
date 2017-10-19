@@ -27,7 +27,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self showBackButtonWithImage];
-    self.title = @"设置密码";
+    
+    [self setCustomLabelForNavTitle:@"设置密码"];
     
     self.contentView = [[UIView alloc] init];
     self.contentView.backgroundColor = UIColorFromRGB(0xffffff);

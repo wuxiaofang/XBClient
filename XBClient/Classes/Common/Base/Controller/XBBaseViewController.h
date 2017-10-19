@@ -12,7 +12,7 @@
 
 
 
-
+- (void)setCustomLabelForNavTitle:(NSString*)title;
 
 - (void)showBackButtonWithImage;
 - (void)showBackButtonWithTitle:(NSString *)title;

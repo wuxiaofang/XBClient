@@ -26,8 +26,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self showBackButtonWithImage];
-    self.title = @"加入或创建学校";
     
+    [self setCustomLabelForNavTitle:@"加入或创建学校"];
     self.schoolArray = [NSArray arrayWithObjects:@"",@"",@"", nil];
     self.tableview = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     self.tableview.dataSource = self;

@@ -17,7 +17,6 @@
 		2F29EA031F95F3D700A7BB29 /* XBSetSchoolCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F29EA021F95F3D700A7BB29 /* XBSetSchoolCell.m */; };
 		2F29EA061F95F3FC00A7BB29 /* XBSetSchoolCreateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F29EA051F95F3FC00A7BB29 /* XBSetSchoolCreateCell.m */; };
 		2F29EA091F96FF2800A7BB29 /* XBCreateSchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F29EA081F96FF2800A7BB29 /* XBCreateSchoolViewController.m */; };
-		2F29EA0F1F972F6400A7BB29 /* XBCheckInTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F29EA0E1F972F6400A7BB29 /* XBCheckInTableHeaderView.m */; };
 		2F29EA131F97334D00A7BB29 /* XBCheckInCourseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F29EA121F97334D00A7BB29 /* XBCheckInCourseCell.m */; };
 		2F38DA2E1F6F66150064594D /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F38DA2D1F6F66150064594D /* UIView+Frame.m */; };
 		2F38DA341F6F67470064594D /* UIImage+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F38DA331F6F67470064594D /* UIImage+Addition.m */; };
@@ -37,6 +36,7 @@
 		2F5D34DD1F8F101B009C116A /* XBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5D34DB1F8F101B009C116A /* XBLoginViewController.m */; };
 		2F5D34E11F8F1057009C116A /* XBLoginAndRegisterHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5D34E01F8F1057009C116A /* XBLoginAndRegisterHandler.m */; };
 		2F5D34E71F8F13D1009C116A /* XBScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5D34E61F8F13D1009C116A /* XBScrollView.m */; };
+		2F631CD11F983DF500713915 /* XBCheckInTimetableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F631CD01F983DF500713915 /* XBCheckInTimetableCell.m */; };
 		2FFA8BC11F6B7FF000A2C58F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFA8BC01F6B7FF000A2C58F /* main.m */; };
 		2FFA8BC41F6B7FF000A2C58F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FFA8BC31F6B7FF000A2C58F /* AppDelegate.m */; };
 		2FFA8BCA1F6B7FF000A2C58F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FFA8BC81F6B7FF000A2C58F /* Main.storyboard */; };
@@ -63,8 +63,6 @@
 		2F29EA051F95F3FC00A7BB29 /* XBSetSchoolCreateCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBSetSchoolCreateCell.m; sourceTree = "<group>"; };
 		2F29EA071F96FF2800A7BB29 /* XBCreateSchoolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBCreateSchoolViewController.h; sourceTree = "<group>"; };
 		2F29EA081F96FF2800A7BB29 /* XBCreateSchoolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBCreateSchoolViewController.m; sourceTree = "<group>"; };
-		2F29EA0D1F972F6400A7BB29 /* XBCheckInTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBCheckInTableHeaderView.h; sourceTree = "<group>"; };
-		2F29EA0E1F972F6400A7BB29 /* XBCheckInTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBCheckInTableHeaderView.m; sourceTree = "<group>"; };
 		2F29EA111F97334D00A7BB29 /* XBCheckInCourseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBCheckInCourseCell.h; sourceTree = "<group>"; };
 		2F29EA121F97334D00A7BB29 /* XBCheckInCourseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBCheckInCourseCell.m; sourceTree = "<group>"; };
 		2F38DA251F6F63800064594D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -107,6 +105,8 @@
 		2F5D34E21F8F107E009C116A /* XBLoginAndRegisterDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBLoginAndRegisterDefine.h; sourceTree = "<group>"; };
 		2F5D34E51F8F13D1009C116A /* XBScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBScrollView.h; sourceTree = "<group>"; };
 		2F5D34E61F8F13D1009C116A /* XBScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBScrollView.m; sourceTree = "<group>"; };
+		2F631CCF1F983DF500713915 /* XBCheckInTimetableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBCheckInTimetableCell.h; sourceTree = "<group>"; };
+		2F631CD01F983DF500713915 /* XBCheckInTimetableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBCheckInTimetableCell.m; sourceTree = "<group>"; };
 		2FFA8BBC1F6B7FF000A2C58F /* XBClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XBClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FFA8BC01F6B7FF000A2C58F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2FFA8BC21F6B7FF000A2C58F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -206,8 +206,6 @@
 			isa = PBXGroup;
 			children = (
 				2F29EA101F972F7100A7BB29 /* Cell */,
-				2F29EA0D1F972F6400A7BB29 /* XBCheckInTableHeaderView.h */,
-				2F29EA0E1F972F6400A7BB29 /* XBCheckInTableHeaderView.m */,
 			);
 			path = CheckIn;
 			sourceTree = "<group>";
@@ -217,6 +215,8 @@
 			children = (
 				2F29EA111F97334D00A7BB29 /* XBCheckInCourseCell.h */,
 				2F29EA121F97334D00A7BB29 /* XBCheckInCourseCell.m */,
+				2F631CCF1F983DF500713915 /* XBCheckInTimetableCell.h */,
+				2F631CD01F983DF500713915 /* XBCheckInTimetableCell.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -650,6 +650,7 @@
 				2F5D34DD1F8F101B009C116A /* XBLoginViewController.m in Sources */,
 				2FFA8BC41F6B7FF000A2C58F /* AppDelegate.m in Sources */,
 				2F29E9FB1F95D09300A7BB29 /* XBSetPasswordViewController.m in Sources */,
+				2F631CD11F983DF500713915 /* XBCheckInTimetableCell.m in Sources */,
 				2F38DA541F6F6CE50064594D /* NSMutableArray+SafeData.m in Sources */,
 				2F1331111F8B1E0900FF6E91 /* XBBaseViewController.m in Sources */,
 				2F29EA131F97334D00A7BB29 /* XBCheckInCourseCell.m in Sources */,
@@ -666,7 +667,6 @@
 				2F38DA4A1F6F6BDA0064594D /* NSDictionary+SafeData.m in Sources */,
 				2F5D34E71F8F13D1009C116A /* XBScrollView.m in Sources */,
 				2FFA8BC11F6B7FF000A2C58F /* main.m in Sources */,
-				2F29EA0F1F972F6400A7BB29 /* XBCheckInTableHeaderView.m in Sources */,
 				2F38DA461F6F6A5D0064594D /* UIColor+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
