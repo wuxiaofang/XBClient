@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self setCustomLabelForNavTitle:@"教学指标"];
 }
 
 - (void)didReceiveMemoryWarning {
