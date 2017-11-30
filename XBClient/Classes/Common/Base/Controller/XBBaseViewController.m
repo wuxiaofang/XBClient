@@ -19,6 +19,7 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = UIColorFromRGB(0xf5f5f5);
     self.edgesForExtendedLayout = UIRectEdgeNone;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,6 +27,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)setCustomLabelForNavTitle:(NSString*)title
+{
+    UILabel* label = [[UILabel alloc] init];
+    label.backgroundColor = [UIColor clearColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.font = [UIFont systemFontOfSize:19];
+    label.textColor = UIColorFromRGB(0xffffff);
+    label.text = title;
+    [label sizeToFit];
+    label.frame = CGRectIntegral(label.frame);
+    self.navigationItem.titleView = label;
+}
 
 
 - (void)showBackButtonWithImage
@@ -51,7 +64,7 @@
 {
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
     [button setTitle:title forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [button.titleLabel setFont:[UIFont systemFontOfSize:15]];
     
     CGFloat width = [title widthWithFont:[UIFont systemFontOfSize:15]
@@ -70,17 +83,31 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (void)setCustomLabelForNavTitle:(NSString*)title
+
+
+
+- (void)showRightButtonWithTitle:(NSString *)title
 {
-    UILabel* label = [[UILabel alloc] init];
-    label.backgroundColor = [UIColor clearColor];
-    label.textAlignment = NSTextAlignmentCenter;
-    label.font = [UIFont systemFontOfSize:19];
-    label.textColor = UIColorFromRGB(0xffffff);
-    label.text = title;
-    [label sizeToFit];
-    label.frame = CGRectIntegral(label.frame);
-    self.navigationItem.titleView = label;
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
+    [button setTitle:title forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [button.titleLabel setFont:[UIFont systemFontOfSize:15]];
+    
+    CGFloat width = [title widthWithFont:[UIFont systemFontOfSize:15]
+                     constrainedToHeigth:44 lineBreakMode:button.titleLabel.lineBreakMode textAlignment:button.titleLabel.textAlignment];
+    button.frame = CGRectMake(0, 0, width, 44);
+    
+    UIBarButtonItem *barItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    [button addTarget:self
+               action:@selector(rightButtonPress)
+     forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = barItem;
+    
+}
+- (void)rightButtonPress
+{
+    
+    
 }
 
 @end

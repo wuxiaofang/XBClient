@@ -16,7 +16,10 @@
 
 - (void)showBackButtonWithImage;
 - (void)showBackButtonWithTitle:(NSString *)title;
-
 - (void)backBarButtonPressed;
+
+
+- (void)showRightButtonWithTitle:(NSString *)title;
+- (void)rightButtonPress;
 
 @end
